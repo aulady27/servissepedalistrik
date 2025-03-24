@@ -1,0 +1,125 @@
+:root {
+  /* --border: #cccccc50; */
+  --border: oklch(0.928 0.006 264.531);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #212529;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header h2 {
+  font-weight: normal;
+}
+
+header nav a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #a3a5a6;
+  font-size: 16px;
+}
+
+.active {
+  color: white;
+}
+
+/* admin style */
+.admin {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.admin tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.admin table th,
+.admin table td {
+  padding: 16px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.admin .table-layout {
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+.admin table tr:nth-child(even) {
+  background-color: oklch(0.985 0.002 247.839);
+}
+
+.admin table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+}
+
+.admin .input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin input,
+.admin select {
+  min-width: 400px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+}
+
+.status-pending {
+  background-color: oklch(0.75 0.183 55.934);
+}
+
+.status-proses {
+  background-color: oklch(0.707 0.165 254.624);
+}
+
+.status-selesai {
+  background-color: oklch(0.792 0.209 151.711);
+}
+
+.admin button {
+  /* background-color: transparent; */
+  border: none;
+  cursor: pointer;
+}

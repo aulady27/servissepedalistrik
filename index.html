@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Sepeda Listrik</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        /* background-color: #f4f4f4; */
+        background-color: white;
+      }
+      form {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+      }
+      label {
+        font-size: 14px;
+        margin-top: 14px;
+      }
+      input,
+      select,
+      textarea {
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        /* background-color: #f4f4f4; */
+        background-color: transparent;
+      }
+      input:focus {
+        outline: 1px solid #1976d3;
+      }
+      button {
+        background: #0073e6;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 16px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: #005bb5;
+      }
+
+      .input-form {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h2>Data Service Sepeda Listrik</h2>
+      </div>
+    </header>
+    <form id="serviceForm">
+      <div class="input-form">
+        <label for="nama">Nama</label>
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="masukkan nama"
+          required
+        />
+      </div>
+
+      <div class="input-form">
+        <label for="nama_toko">Pilih Nama Toko</label>
+        <select id="jenis_service" name="jenis_service" required>
+          <option value="">-- Pilih Toko --</option>
+          <option value="Ofero1">Ofero 1 Kudus</option>
+          <option value="Ofero2">Ofero 2 Kudus</option>
+          <option value="Yadea">Yadea Kudus</option>
+          <option value="Brayung">King EV Brayung</option>
+        </select>
+      </div>
+
+      <div class="input-form">
+        <label for="no_hp">Nomor HP</label>
+        <input
+          type="tel"
+          id="no_hp"
+          name="no_hp"
+          placeholder="masukkan nomor telepon"
+          required
+        />
+      </div>
+
+      <div class="input-form">
+        <label for="alamat">Alamat</label>
+        <textarea
+          id="alamat"
+          name="alamat"
+          rows="4"
+          placeholder="masukkan alamat lengkap"
+          required
+        ></textarea>
+      </div>
+
+      <div class="input-form">
+        <label for="no_seri">Nomor Seri</label>
+        <input
+          type="text"
+          id="no_seri"
+          name="no_seri"
+          placeholder="masukkan nomor seri"
+          required
+        />
+      </div>
+
+      <div class="input-form">
+        <label for="jenis_service">Pilih Jenis Service</label>
+        <select id="jenis_service" name="jenis_service" required>
+          <option value="">-- Pilih Service --</option>
+          <option value="ServiceRingan">Service Ringan</option>
+          <option value="ServisSedang">Service Sedang</option>
+          <option value="ServisBerat">Service Berat</option>
+        </select>
+      </div>
+
+      <div class="input-form">
+        <label for="merk">Merek</label>
+        <select id="merk" name="merk" required>
+          <option value="">-- Pilih Merek --</option>
+          <option value="Ofero">Ofero</option>
+          <option value="Yadea">Yadea</option>
+          <option value="Zxtec">ZXTec</option>
+          <option value="Aima">Aima</option>
+        </select>
+      </div>
+
+      <div class="input-form">
+        <label for="tipe">Tipe</label>
+        <select id="tipe" name="tipe" required>
+          <option value="">-- Pilih Tipe --</option>
+        </select>
+      </div>
+
+      <div class="input-form">
+        <label for="keterangan">Keluhan/Permasalahan</label>
+        <textarea
+          id="keterangan"
+          name="keterangan"
+          rows="4"
+          placeholder="masukkan detail keluhan"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+
+    <script src="js/index.js"></script>
+    <script src="js/api.js"></script>
+  </body>
+</html>
